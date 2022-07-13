@@ -51,14 +51,14 @@ public class Main {
 		private static char lerCategoria(Scanner input) {
 			char categoria = 'x';
 			
-			System.out.print("Informe a categoria de trabalho:\n Gerencia [G] \nOperario [O] ");
+			System.out.print("\nInforme a categoria de trabalho:\nGerencia [G] \nOperario [O] ");
 						
 			while (categoria != 'G' && categoria != 'O') {
 					
 				categoria = input.next().charAt(0);
 				
 				if (categoria != 'G' && categoria != 'O') {
-					System.out.print("Informe a categoria de trabalho:\nGerencia [G] \nOperario [O] ");
+					System.out.print("\nInforme a categoria de trabalho:\nGerencia [G] \nOperario [O] ");
 				}
 			}
 			
@@ -66,7 +66,7 @@ public class Main {
 		}
 		
 		private static int lerHorasTrabalhadas(Scanner input) {
-			System.out.print("Informe a quantidade de horas tabalhadas: ");
+			System.out.print("\nInforme a quantidade de horas tabalhadas: ");
 			int horasTrabalhadas = input.nextInt();
 			
 			return horasTrabalhadas;
